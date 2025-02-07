@@ -1,0 +1,13 @@
+name: "ReaderLM-v2-replicate"
+version: "1.0.0"
+description: "Custom deployment of ReaderLM-v2 for private use on Replicate"
+predict:
+  command: "python predict.py"
+  inputs:
+    prompt:
+      type: string
+      description: "Input text prompt for the model"
+  outputs:
+    result:
+      type: string
+      description: "Model generated output"
